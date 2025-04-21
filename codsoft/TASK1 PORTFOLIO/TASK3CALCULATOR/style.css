@@ -1,0 +1,162 @@
+:root {
+    --primary: #6e45e2;
+    --secondary: #88d3ce;
+    --dark: #1a1a2e;
+    --darker: #16213e;
+    --light: #f1f1f1;
+    --accent: #ff9a8b;
+    --glow: 0 0 10px rgba(110, 69, 226, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--light);
+}
+
+.calculator {
+    background: linear-gradient(145deg, var(--darker), #0f3460);
+    border-radius: 20px;
+    padding: 25px;
+    width: 320px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.calculator::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        transparent,
+        transparent,
+        transparent,
+        var(--primary)
+    );
+    transform: rotate(30deg);
+    animation: shine 6s infinite linear;
+    opacity: 0.1;
+}
+
+@keyframes shine {
+    0% {
+        transform: rotate(30deg) translate(-10%, -10%);
+    }
+    100% {
+        transform: rotate(30deg) translate(10%, 10%);
+    }
+}
+
+.display {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.previous-operand {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    min-height: 1.2rem;
+}
+
+.current-operand {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px;
+}
+
+.btn {
+    background-color: var(--darker);
+    color: var(--light);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--glow);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn.operator {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn.span-2 {
+    grid-column: span 2;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom right,
+        transparent,
+        transparent,
+        transparent,
+        rgba(255, 255, 255, 0.1)
+    );
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.btn:hover::after {
+    transform: translateX(0);
+}
+
+.btn[data-action="clear"] {
+    background-color: var(--accent);
+}
+
+.btn[data-action="delete"] {
+    background-color: #ff6b6b;
+}
+
+.btn[data-action="calculate"] {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: white;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Navigation with Icons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="mainNav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-palette"></i>
+                <span>DesignHub</span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#home" class="active">
+                    <i class="fas fa-home"></i> Home</a>
+                </li>
+                <li><a href="#about"><i class="fas fa-user-tie"></i> About</a></li>
+                <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="mobile-menu"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Creative Digital Solutions</h1>
+                <p>We craft beautiful digital experiences that drive results</p>
+                <button class="cta-button">Get Started <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section id="about" class="card-section">
+            <h2 class="section-title">About Our Team</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                    <img src="https://th.bing.com/th/id/OIP.NcUVBrpBdDCBLcOP_ISVUQHaH_?rs=1&pid=ImgDetMain" alt="Creative team" class="card-image">
+                    <h3>Innovative Thinkers</h3>
+                    <p>Our team brings fresh perspectives to every project.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-award"></i></div>
+                    <img src="https://th.bing.com/th/id/R.f454af1d748cf4a4024696b89d8d1488?rik=%2b1yO7%2ftUxe9nAw&riu=http%3a%2f%2fstatic8.depositphotos.com%2f1594308%2f1073%2fi%2f450%2fdepositphotos_10732016-stock-photo-professional-team.jpg&ehk=BiVEmobzfTuojJT3kPe5q3ODiwaWPp%2bqOvQSI2bbUzw%3d&risl=&pid=ImgRaw&r=0" alt="Professional team" class="card-image">
+                    <h3>Industry Experts</h3>
+                    <p>Years of experience delivering quality solutions.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-heart"></i></div>
+                    <img src="https://th.bing.com/th/id/OIP.3WkRFa3R89T0U5LlFKJowwHaFP?rs=1&pid=ImgDetMain" alt="Teamwork" class="card-image">
+                    <h3>Passionate Team</h3>
+                    <p>We love what we do and it shows in our work.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="card-section dark">
+            <h2 class="section-title">Our Services</h2>
+            <div class="card-container">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites built for performance and user experience.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> CMS Integration</li>
+                        <li><i class="fas fa-check"></i> E-commerce Solutions</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile applications.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> iOS Development</li>
+                        <li><i class="fas fa-check"></i> Android Development</li>
+                        <li><i class="fas fa-check"></i> React Native</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Digital Marketing</h3>
+                    <p>Grow your business with our marketing expertise.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> SEO Optimization</li>
+                        <li><i class="fas fa-check"></i> Social Media</li>
+                        <li><i class="fas fa-check"></i> PPC Campaigns</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="gallery-section">
+            <h2 class="section-title">Our Portfolio</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://th.bing.com/th/id/OIP.qhABMYXmSHGkRH9Q_J5Z3wHaD4?rs=1&pid=ImgDetMain" alt="Website project">
+                    <div class="gallery-overlay">
+                        <h3>E-commerce Site</h3>
+                        <button class="view-button">View Project <i class="fas fa-external-link-alt"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://th.bing.com/th/id/OIP.JlW6cfFLdHgzefeN0ktyigHaFj?rs=1&pid=ImgDetMain" alt="Mobile app">
+                    <div class="gallery-overlay">
+                        <h3>Fitness App</h3>
+                        <button class="view-button">View Project <i class="fas fa-external-link-alt"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/9a967b116824913.606a3bba47aa0.jpg" alt="Branding project">
+                    <div class="gallery-overlay">
+                        <h3>Brand Identity</h3>
+                        <button class="view-button">View Project <i class="fas fa-external-link-alt"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://th.bing.com/th/id/OIP.z-1GfLQEdhSUwQ7Q-x4djQHaD3?rs=1&pid=ImgDetMain" alt="Marketing campaign">
+                    <div class="gallery-overlay">
+                        <h3>Ad Campaign</h3>
+                        <button class="view-button">View Project <i class="fas fa-external-link-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Design Street, Creative City</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@designhub.com</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-button">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
